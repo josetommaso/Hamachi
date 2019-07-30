@@ -1,0 +1,421 @@
+
+/*** GLOBALS ***/
+
+.outline-picture {
+    outline: 5px solid rgba(255, 255, 255, 0.3); ;
+    outline-offset: -15px;
+}
+.outline-hour-info {
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+    outline-offset: -10px;
+}
+
+
+/*** HERO ***/
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); 
+    
+    .navbar-brand,
+    .nav-link {
+        color: #fff !important;
+        font-family: 'Lato', serif;
+        font-weight: bold;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+    
+    .custom-toggler .navbar-toggler {
+        border-color: none;
+    }
+    
+    .divider {
+        display: none;
+    }
+    
+    .custom-toggler:focus {
+        outline: none !important;
+    }
+    
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+}
+
+/*** HERO ***/
+
+.hero {
+    background-image: url('../assets/images/hero2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    
+    h1,
+    h2,
+    p {
+        font-family: 'Lato', serif;
+    }
+    
+    h1 {
+        
+        font-weight: bold;
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    
+    p {
+        display: inline-block;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .chopsticks {
+        width: 70px;
+    }
+    
+}
+
+/*** HEADER ***/
+
+.chopstick-container {
+    img {
+        width: 100px;
+        top: -100px;
+        left: 67%;
+        transform: rotate(15deg);
+    }
+}
+
+
+/*** ABOUT SECTION***/
+
+.about {
+    
+    .sushi-table-about {
+        margin-top: 100px;
+        //width: 350px;
+    }
+    
+    h2,
+    p {
+        font-family: 'Playfair', serif;
+    }
+    
+    h2 {
+        margin: 20px 0;
+    }
+}
+
+/*** OPENING HOURS SECTION***/
+
+.opening-hour {
+    .img-opening-times {
+        min-width: 100%;
+    }
+}
+
+.table-background {
+    background-image: url('../assets/images/table-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    padding-bottom: 100px;
+    
+    
+    h2 {
+        font-family: 'Playfair', serif;
+    }
+    
+    p {
+        font-family: 'Lato', serif;
+    }
+    
+    img {
+        max-width: 150px;
+    }
+    
+    .img-opening-times,
+    .hour-info {
+        max-height: 227px !important;
+    }
+    
+    
+    .opening-row {
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    
+}
+
+
+/*** MENU SECTION***/
+
+.menu-section {
+    background-image: url('../assets/images/menu-background.png');
+    background-position: center;
+    background-size: cover;
+    
+    h2 {
+        font-family: 'Playfair', serif;
+    }
+    
+    .inner-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        outline: 5px solid rgba(255, 255, 255, 0.3);
+        width: 85%;
+        height: 85%;
+        
+        .inner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Playfair', serif;
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .price {
+        color: #FF0000;
+        font-weight: bold;
+    }
+    
+    .price::after {
+        content: '€';
+        font-weight: bold;
+        color: #000;
+    }
+    
+    .linewrapper,
+    .ingredients {
+        font-family: 'Lato', serif;
+    }
+    
+    .linewrapper {
+        display: flex;
+        align-items: baseline;
+    }
+      
+    .menu-item {
+          font-weight: bold;
+          text-transform: uppercase;
+    }
+      
+    .middle {
+        border-bottom: 1px dotted #aaa;
+        flex-grow: 1;
+        margin: 0 5px;
+    }
+    
+    .ingredients {
+        color: #9c9c9c;
+        margin-bottom: 1em;
+        font-weight: bold;
+        font-size: 14px;
+    }
+      
+      
+}
+
+/*** TEAM SECTION ***/
+
+.team {
+    background-image: url('../assets/images/team-background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lato', serif;
+    
+    h1 {
+        font-size: 1.1em;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+    
+    .social-networks {
+        li {
+            border: 1px solid #000;
+            border-radius: 50%;
+            
+            i {
+                font-size: 1em;
+                padding: 7px;
+                color: #000;
+            }
+        }
+    }
+    
+    .job-description {
+        color: #FF0000;
+    }
+    
+}
+
+
+
+
+/*** RESERVATION SECTION ***/
+
+.reservation {
+    margin-bottom: 35px;
+    font-family: 'Lato', serif;
+    .form-background {
+        background-image: url('../assets/images/reservation-1.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 3px;
+        padding: 50px 0;
+        
+        .form-group {
+            
+            
+            label {
+                font-weight: bold;
+            }
+        }
+        
+        .note {
+            font-weight: bold;
+        }
+        
+        button {
+            background-color: #343A40;
+            color: #fff;
+            
+        }
+    }
+}
+
+/*** FOOTER SECTION ***/
+
+footer {
+    background-image: url('../assets/images/footer-background.png');
+    background-repeat: repeat;
+    
+    .title-footer {
+        font-family: 'Lato', serif;
+        font-size: 3em;
+        color: #9c9c9c;
+    }
+    
+    .social-networks {
+        li {
+            border: 1px solid #9c9c9c;
+            border-radius: 50%;
+            
+            i {
+                font-size: 1.3em;
+                padding: 10px;
+                color: #9c9c9c;
+            }
+        }
+    }
+    
+    .madeby {
+        font-size: 0.8em;
+    }
+}
+
+/*** QUERIES ***/
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+    /*** HERO SECTION***/
+    .hero {
+        h1 {
+           font-size: 4em; 
+        }
+        
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+    
+    
+    .chopstick-container {
+        img {
+            width: 180px;
+            top: -200px;
+            left: 67%;
+            transform: rotate(15deg);
+        }
+    }
+    
+    nav {
+        .nav-item {
+            position: relative;
+            float: left;
+        }
+        
+        .nav-link {
+            padding-right: 2em !important; 
+            padding-left: 2em !important; 
+        }
+        
+        
+        
+        .divider {
+            display: inline-block;
+            position: absolute;
+            right: -3px;
+            top: 7px;
+        }
+    }
+    
+    .about {
+        margin: 100px 0;
+        
+        
+    }
+    
+    /*** OPENING HOURS SECTION***/
+    
+    .table-background {
+        .opening-row {
+            margin-right: 10%;
+            margin-left: 10%;
+            
+        }
+        
+        .hour-icon {
+            padding-top: 15px !important;
+        }
+    }
+    
+    .team {
+        height: 800px;
+    }
+    
+    /*** RESERVATION SECTION ***/
+    
+    .reservation {
+        .form-group {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    }
+    
+    
+}
+
+
+
